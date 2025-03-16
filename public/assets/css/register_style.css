@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fceef3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .login-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .login-form a {
+    color: #ea4c89;
+    text-decoration: none;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .password-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .password-group .show-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .options .forgot-password {
+    color: #ea4c89;
+    text-decoration: none;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ea4c89;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .login-btn:hover {
+    background-color: #d43a76;
+  }
+
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  .google-login {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .google-login img {
+    vertical-align: middle;
+  }
+
+  .password-group {
+    position: relative;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-group .icon {
+    position: absolute;
+    left: 10px; /* تحريك القفل لليسار */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b7bdc8;
+  }
+
+  .input-group input {
+    padding-left: 35px; /* نترك مساحة للقفل */
+  }
+
+  .password-group .password-toggle {
+    right: 10px; /* العين تبقى على اليمين */
+    left: auto; /* إزالة أي تأثير لليسار */
+  }
+
+
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px; /* مسافة بين الإدخالات */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* تنسيق الأخطاء بشكل أوضح وأنيق */
+.error-message {
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 4px;
+    font-weight:100;
+    text-align: left; /* يجعل النص متناسق */
+}

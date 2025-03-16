@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --main-color: #fea0da;
+    --hover-color: #f04bb1;
+    --background-color: #fdf2f8;
+    --input-bg: #fff;
+    --input-border: #ccc;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: white;
+}
+
+body {
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.login-container {
+    background: white;
+    padding: 25px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 15px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-bottom: 2px solid var(--input-border);
+    background: transparent;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid var(--main-color);
+    outline: none;
+    box-shadow: none;
+}
+
+
+.input-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--text-color);
+    pointer-events: none;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: var(--main-color);
+}
+
+.login-btn {
+    width: 100%;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: var(--hover-color);
+}
+
+.or {
+    margin: 10px 0;
+}
+
+.google-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--input-border);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    background: #f4f4f4;
+    margin-top: 15px;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.google-btn:hover {
+    background: #e8e8e8;
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        width: 500px;
+        padding: 40px;
+    }
+}
+
+.email-info {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.code-box {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.code-box:focus {
+    border-color: var(--main-color);
+    box-shadow: 0px 0px 5px rgba(254, 160, 218, 0.5);
+}
+
+.resend-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resend-text a {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resend-text a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    color: var(--main-color);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    text-align: center;
+}
+
+.password-info {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    text-align: center;
+}
