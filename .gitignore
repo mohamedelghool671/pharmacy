@@ -21,3 +21,13 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+storage/api-docs/
+stubs/
+resources/views/errors/
+resources/views/vendor/
+app/Helpers/
+app/Http/Requests/Api/
+app/Mail/
+config/l5-swagger.php
+config/sanctum.php
+database/migrations/2025_03_18_081832_create_personal_access_tokens_table.php

@@ -20,7 +20,7 @@
             <h2>Create Acount </h2>
         </a>
         <a href="{{ route("login") }}" class="user-card"><img src="{{ asset("assets/images/buyer.png") }}" alt="pharmacist">
-            <p>Do you already have an account?</p>
+            <p>already have an account?</p>
             <h2>Log in </h2>
         </a>
     </section>

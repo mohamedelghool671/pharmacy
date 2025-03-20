@@ -19,6 +19,7 @@ class LoginController extends Controller
 public function redirectGoogleCallback()
 {
     $user = Socialite::driver('google')->user();
+    dd($user);
     $this->_registerOrLoginUser($user);
     if($user->role == "admin") {
         return view("pharmacy.admin.dashboard");
