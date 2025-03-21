@@ -25,7 +25,6 @@ storage/api-docs/
 stubs/
 resources/views/errors/
 resources/views/vendor/
-app/Mail/
 config/l5-swagger.php
 config/sanctum.php
 
